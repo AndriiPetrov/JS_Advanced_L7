@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <p>Заказ пиццы</p>
+    <fieldset>
+    <legend>Make your choice</legend>
+    <form>
+        <p>1. What size do you prefere</p>
+        <span>Small 15$<input type="radio" name="size" value="15" checked="checked"></span>
+        <span>Normal 20$<input type="radio" name="size" value="20"></span>
+        <span>Large 25$<input type="radio" name="size" value="25"></span>
+
+        <p>2. Choose your Ingredients</p>
+        <span>bacon 10$<input type="checkbox" name="ingredients" value="10" checked="checked"></span>
+        <span>mashroom 15$<input type="checkbox" name="ingredients" value="15"></span>
+        <span>tomatoes 12$<input type="checkbox" name="ingredients" value=12></span>
+        <span>cheese 11$<input type="checkbox" name="ingredients" value=11></span>
+        <span>olives 16$<input type="checkbox" name="ingredients" value=16></span>
+        <span>chicken 17$<input type="checkbox" name="ingredients" value=17></span>
+        <p>Price =<span id="price"></span></p>
+        <p>3. Mobilephone number</p>
+        <input type="text" pattern="\d{10}" title="Формат телефона 10 ЦИФР" name="mobilenumber" value="">
+
+        <P>4. Address delivery</P>
+        <input type="text" name="address" placeholder="Insert address delivery" required="required">
+        
+        <p><input type="submit" value="Send an order"></p>
+    </form>
+</fieldset>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
